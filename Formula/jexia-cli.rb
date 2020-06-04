@@ -1,4 +1,4 @@
-class Jexiacli < Formula
+class JexiaCli < Formula
   desc "Official Jexia CLI tool for interacting with Jexia platform"
   homepage "https://github.com/jexia/jexia-cli"
   version "1.0.0"
