@@ -2,24 +2,24 @@
 class Maestro < Formula
   desc "A straightforward service orchestrator"
   homepage "https://github.com/jexia/maestro"
-  version "2.0.0-beta.14"
+  version "2.0.0-beta.15"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.14/maestro-2.0.0-beta.14-darwin-amd64.tar.gz"
-    sha256 "e49ba0a8128dc6cc188fd1bde512097b5462f72240358ba1d3702c419fa38ab2"
+    url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.15/maestro-2.0.0-beta.15-darwin-amd64.tar.gz"
+    sha256 "7a968186c7c846ec95c62afb972f39628f5f1df8a8d56a57b5850efe4e13a096"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.14/maestro-2.0.0-beta.14-linux-amd64.tar.gz"
-      sha256 "aaebdeaa74b54d4c9cf9cdd349553afbfcec41c13c2bb91222ad6915a7c2242c"
+      url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.15/maestro-2.0.0-beta.15-linux-amd64.tar.gz"
+      sha256 "a3e5e4c710a19cb0d3ec8b83de6ffab6d2a7c51a1b01457862662d34ca013333"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.14/maestro-2.0.0-beta.14-linux-arm64.tar.gz"
-        sha256 "8512b80d487af6b450607d2dd6004ee73c80bdd91773f17fab24aa8870999938"
+        url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.15/maestro-2.0.0-beta.15-linux-arm64.tar.gz"
+        sha256 "e52969f107a0207512b2e9a4b8214c7a386a176cda37de8270da06e19e0ef6ac"
       else
-        url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.14/maestro-2.0.0-beta.14-linux-arm.tar.gz"
-        sha256 "521739ae574da940ba921d8ebf19eda6e40d171d41609dc550cefe56ccbecf66"
+        url "https://github.com/jexia/maestro/releases/download/v2.0.0-beta.15/maestro-2.0.0-beta.15-linux-arm.tar.gz"
+        sha256 "19ced5c713eb160bd941e62e4ee8431bb21ead1343b5d95a105ee62fdd613737"
       end
     end
   end
