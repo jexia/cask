@@ -2,24 +2,24 @@
 class Semaphore < Formula
   desc "A straightforward service orchestrator"
   homepage "https://github.com/jexia/semaphore"
-  version "2.0.0-beta.18"
+  version "2.0.0-beta.19"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.18/semaphore-2.0.0-beta.18-darwin-amd64.tar.gz"
-    sha256 "ca94dde42eb5aa8430e7306b328b0a40e4c3651b3a184b5cfe67fb84ad48364c"
+    url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.19/semaphore-2.0.0-beta.19-darwin-amd64.tar.gz"
+    sha256 "9c154050b7e03b273fadefdc7e2e4eaa96c621ae4a6a0b8dc4a9313629295d4a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.18/semaphore-2.0.0-beta.18-linux-amd64.tar.gz"
-      sha256 "e71b9973d5bda0af75c40fbbbec08367961acd5eb920c10fe1b3bd6e8f894e36"
+      url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.19/semaphore-2.0.0-beta.19-linux-amd64.tar.gz"
+      sha256 "f519cc2ebad1d73ae4214051cb72b1c79023f64aebff3717bf5c4223cb92de6b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.18/semaphore-2.0.0-beta.18-linux-arm64.tar.gz"
-        sha256 "a11f67dbf605dd65b7481f0b9cc36ab70573d304f80a09258285fe2c03100d84"
+        url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.19/semaphore-2.0.0-beta.19-linux-arm64.tar.gz"
+        sha256 "643a4ea0379b7d695c35b1c9dfc32c35b4059a0b1d0c9e0f0082cb015b91107d"
       else
-        url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.18/semaphore-2.0.0-beta.18-linux-arm.tar.gz"
-        sha256 "ecc3cb61ab6c962b12a9a528dff7e255d7730e43a2180cac6f57d28c89d0053b"
+        url "https://github.com/jexia/semaphore/releases/download/v2.0.0-beta.19/semaphore-2.0.0-beta.19-linux-arm.tar.gz"
+        sha256 "91082e0e51d9fc6a586b55e8a3cedbdb554b3c22ac9bc5093ef30b619bc75521"
       end
     end
   end
